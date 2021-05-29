@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/*Sass Variables*/
+$mainfont:'DM Serif Display', serif;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $mainfont;
+}
+
+.hero {
+position: absolute;
+right: 0;
+width: 100%;
+min-height: 100vh;
+}
