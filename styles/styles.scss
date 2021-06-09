@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 /*Sass Variables*/
+
+//Font
 $mainfont:'DM Serif Display', serif;
+$fontLight: 300;
+$fontBold: 700;
+
+//Colors
+$black: #353535;
+$gray: #4f4f4f;
+$medium-gray: #737373;
+$light-gray: #c4c4c4;
+$orange: #f96855;
+
+//Semantic Color Names
+$boxColor: $orange;
+$gridContentBackground: $black;
+$gridFontColor: $light-gray;
 
 *{
     box-sizing: border-box;
@@ -144,10 +160,48 @@ z-index: 2;
 }
 
 //Main Context Section code starts
-.content {
-    position: relative;
+
+//Grid Content code starts here
+.grid-content {
+    padding: 10%;
     min-height: 100vh;
-    width: 100%;
-    z-index: 2;
+    flex: 1 1 80%;
+    display: grid;
 }
+
+.grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    
+}
+
+.grid-content-item {
+    background: $boxColor;
+    color: $black;
+    font-weight: $fontBold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.small-square {
+        grid-row: span 1;
+        grid-row: span 2;
+    }
+
+    &.medium-square {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    &.large-square {
+        grid-row: span 3;
+        grid-column: span 3;
+    }
+}
+//Grid Content code ends here
+
 //Main Context Section code ends
