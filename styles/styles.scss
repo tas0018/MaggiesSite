@@ -164,7 +164,7 @@ z-index: 2;
 //Grid Content code starts here
 .grid-content {
     padding: 10%;
-    min-height: 100vh;
+    min-height: 150vh;
     flex: 1 1 80%;
     display: grid;
 }
@@ -200,6 +200,16 @@ z-index: 2;
     &.large-square {
         grid-row: span 3;
         grid-column: span 3;
+    }
+
+    &.thin-square {
+        grid-row: span 3;
+        grid-column: span 1;
+    }
+
+    &.wide-square {
+        grid-row: span 1;
+        grid-column: span 4;
     }
 }
 //Grid Content code ends here
