@@ -42,6 +42,7 @@ header .logo {
   letter-spacing: 2px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  color: #fff;
 }
 
 header ul {
@@ -70,6 +71,7 @@ header ul li a {
   font-weight: 500px;
   -webkit-transition: 0,6s;
   transition: 0,6s;
+  color: #fff;
 }
 
 header.sticky .logo,
@@ -161,7 +163,7 @@ header.sticky ul li a {
 
 .grid-content {
   padding: 10%;
-  min-height: 150vh;
+  min-height: 200vh;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 80%;
           flex: 1 1 80%;
@@ -173,8 +175,8 @@ header.sticky ul li a {
   display: -ms-grid;
   display: grid;
   height: 100%;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
   grid-gap: 20px;
@@ -196,10 +198,11 @@ header.sticky ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 2px;
 }
 
 .grid-content-item.small-square {
-  grid-row: span 1;
+  grid-row: span 3;
   grid-row: span 2;
 }
 
@@ -209,17 +212,48 @@ header.sticky ul li a {
 }
 
 .grid-content-item.large-square {
-  grid-row: span 3;
+  grid-row: span 2;
+  grid-column: span 4;
+}
+
+.grid-content-item.half-square {
+  grid-row: span 2;
   grid-column: span 3;
 }
 
-.grid-content-item.thin-square {
-  grid-row: span 3;
-  grid-column: span 1;
+.one {
+  background-color: #F4F4ED;
 }
 
-.grid-content-item.wide-square {
-  grid-row: span 1;
-  grid-column: span 4;
+.two {
+  background-image: url(/images/online-therapy.jpg);
+  background-size: cover;
+  background-color: #353535;
+  background-blend-mode: overlay;
+  color: #c4c4c4;
+}
+
+.three {
+  background-image: url(/images/maggieTherapistPicture.JPG);
+  background-position: 50% 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.four {
+  background-color: #746685;
+  color: #fff;
+}
+
+.five {
+  background-color: #746685;
+}
+
+.six {
+  background-color: #746685;
+}
+
+.seven {
+  background-color: #746685;
 }
 /*# sourceMappingURL=styles.css.map */

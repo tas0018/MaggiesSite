@@ -13,6 +13,15 @@ $gray: #4f4f4f;
 $medium-gray: #737373;
 $light-gray: #c4c4c4;
 $orange: #f96855;
+$white: #fff;
+$off-white: #f6f6f5;
+
+//Potential Color Palette
+$pampas: #F4F4ED;
+$manatee: #8D8E94;
+$havelock-blue: #61AAD8;
+$rum-purple: #746685;
+$astronaut-blue: #28466D;
 
 //Semantic Color Names
 $boxColor: $orange;
@@ -52,6 +61,7 @@ header .logo {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
+    color: $white;
 }
 
 header ul {
@@ -73,6 +83,7 @@ header ul li a {
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0,6s;
+    color: $white;
 }
 header.sticky .logo,
 header.sticky ul li a{
@@ -164,7 +175,7 @@ z-index: 2;
 //Grid Content code starts here
 .grid-content {
     padding: 10%;
-    min-height: 150vh;
+    min-height: 200vh;
     flex: 1 1 80%;
     display: grid;
 }
@@ -172,7 +183,7 @@ z-index: 2;
 .grid {
     display: grid;
     height: 100%;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 20px;
     justify-content: center;
@@ -186,9 +197,10 @@ z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2px;
 
     &.small-square {
-        grid-row: span 1;
+        grid-row: span 3;
         grid-row: span 2;
     }
 
@@ -198,19 +210,51 @@ z-index: 2;
     }
 
     &.large-square {
-        grid-row: span 3;
-        grid-column: span 3;
-    }
-
-    &.thin-square {
-        grid-row: span 3;
-        grid-column: span 1;
-    }
-
-    &.wide-square {
-        grid-row: span 1;
+        grid-row: span 2;
         grid-column: span 4;
     }
+    
+    &.half-square {
+        grid-row: span 2;
+        grid-column: span 3;
+    }
+}
+
+// Code for the apperance of each grid-box starts here
+.one {
+    background-color: $pampas;
+}
+
+.two {
+    background-image: url(/images/online-therapy.jpg);
+    background-size: cover;
+    background-color: $black;
+    background-blend-mode: overlay;
+    color: $light-gray;
+}
+
+.three {
+    background-image: url(/images/maggieTherapistPicture.JPG);
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.four {
+    background-color: $rum-purple;
+    color: $white;
+}
+
+.five {
+    background-color: $rum-purple;
+}
+
+.six {
+    background-color: $rum-purple;
+}
+
+.seven {
+    background-color: $rum-purple;
 }
 //Grid Content code ends here
 
