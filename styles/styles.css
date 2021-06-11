@@ -88,7 +88,7 @@ header.sticky ul li a {
   position: relative;
   right: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 106vh;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +97,8 @@ header.sticky ul li a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 
 .hero-text {
@@ -288,6 +290,8 @@ header.sticky ul li a {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
+  -webkit-clip-path: polygon(0 0, 100% 8%, 100% 99%, 0% 100%);
+          clip-path: polygon(0 0, 100% 8%, 100% 99%, 0% 100%);
 }
 
 .poem-content h1 {

@@ -96,17 +96,22 @@ header.sticky ul li a{
 }
 
 .hero {
-position: relative;
-right: 0;
-width: 100%;
-min-height: 100vh;
-padding: 1rem;
-display: flex;
-// justify-content: space-between;
-align-items: center;
-// background: #111;
-// color: #fff;
-z-index: 2;
+    position: relative;
+    right: 0;
+    width: 100%;
+
+    // Used 105vh for the angled div with clip path.
+    // Use 100 vh for normal div and comment out the clip path.
+    min-height: 106vh;
+    padding: 1rem;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    // background: #111;
+    // color: #fff;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
 }
 
 .hero-text{
@@ -288,6 +293,7 @@ z-index: 2;
     position: relative;
     display: flex;
     min-height: 100vh;
+    clip-path: polygon(0 0, 100% 8%, 100% 99%, 0% 100%);
 }
 
 .poem-content h1 {
