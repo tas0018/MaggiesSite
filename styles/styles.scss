@@ -246,19 +246,38 @@ z-index: 2;
 }
 
 .five {
-    background-color: $rum-purple;
-    color: $white;
+    background-image: url(/images/can-do.jpg);
+    background-size: cover;
+    background-color: $black;
+    background-blend-mode: overlay;
+    color: $light-gray;
+    // color: $white;
 }
 
 .six {
-    background-color: $rum-purple;
-    color: $white;
+    background-image: url(/images/individual-therapy.jpg);
+    background-size: cover;
+    background-color: $black;
+    background-blend-mode: overlay;
+    color: $light-gray;
+    // color: $white;
 }
 
 .seven {
-    background-color: $rum-purple;
-    color: $white;
+    background-image: url(/images/group-therapy.jpg);
+    background-size: cover;
+    background-color: $black;
+    background-blend-mode: overlay;
+    color: $light-gray;
+    // color: $white;
 }
-//Grid Content code ends here
+//Grid Content code ends 
+
+/*Poem Code starts here*/
+.poem-wrapper {
+    background-color: $pampas;
+    padding: 10%;
+}
+/*Poem Code end here*/
 
 //Main Context Section code ends

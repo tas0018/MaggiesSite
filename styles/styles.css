@@ -246,17 +246,34 @@ header.sticky ul li a {
 }
 
 .five {
-  background-color: #746685;
-  color: #fff;
+  background-image: url(/images/can-do.jpg);
+  background-size: cover;
+  background-color: #353535;
+  background-blend-mode: overlay;
+  color: #c4c4c4;
 }
 
 .six {
-  background-color: #746685;
-  color: #fff;
+  background-image: url(/images/individual-therapy.jpg);
+  background-size: cover;
+  background-color: #353535;
+  background-blend-mode: overlay;
+  color: #c4c4c4;
 }
 
 .seven {
-  background-color: #746685;
-  color: #fff;
+  background-image: url(/images/group-therapy.jpg);
+  background-size: cover;
+  background-color: #353535;
+  background-blend-mode: overlay;
+  color: #c4c4c4;
 }
+
+/*Poem Code starts here*/
+.poem-wrapper {
+  background-color: #F4F4ED;
+  padding: 10%;
+}
+
+/*Poem Code end here*/
 /*# sourceMappingURL=styles.css.map */
