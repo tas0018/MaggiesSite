@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+html {
+  font-size: 10px;
+}
+
 /*Sass Variables*/
 * {
   -webkit-box-sizing: border-box;
@@ -37,7 +41,7 @@ header .logo {
   position: relative;
   font-weight: 700;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   -webkit-transition: 0.6s;
@@ -69,6 +73,7 @@ header ul li a {
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500px;
+  font-size: 1.7rem;
   -webkit-transition: 0,6s;
   transition: 0,6s;
   color: #fff;
@@ -99,24 +104,25 @@ header.sticky ul li a {
   position: relative;
   z-index: 3;
   color: #fff;
+  font-size: 1.7rem;
 }
 
 .hero-text h2 {
-  font-size: 4em;
+  font-size: 6rem;
   font-weight: 800;
   line-height: 1.3em;
   text-transform: uppercase;
 }
 
 .hero-text h3 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.3em;
   text-transform: uppercase;
 }
 
 .hero-text p {
-  font-size: 1.1em;
+  font-size: 1.8rem;
   margin: 0.5rem 0;
   font-weight: 400;
   max-width: 700px;
@@ -199,6 +205,7 @@ header.sticky ul li a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 2px;
+  font-size: 1.8rem;
 }
 
 .grid-content-item.small-square {
@@ -272,7 +279,31 @@ header.sticky ul li a {
 /*Poem Code starts here*/
 .poem-wrapper {
   background-color: #F4F4ED;
-  padding: 10%;
+  padding: 5% 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.poem-content h1 {
+  font-size: 7rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+  margin-left: -4rem;
+}
+
+.poem-content p {
+  font-size: 1.8rem;
+}
+
+.poem-picture img {
+  padding-top: 17rem;
+  padding-left: 7rem;
 }
 
 /*Poem Code end here*/
