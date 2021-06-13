@@ -311,4 +311,37 @@ header.sticky ul li a {
 }
 
 /*Poem Code end here*/
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #8D8E94;
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+.footer-wrapper::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+}
 /*# sourceMappingURL=styles.css.map */
