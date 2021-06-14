@@ -318,14 +318,17 @@ header.sticky ul li a{
 //Footer code starts
 .footer-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
+    min-height: 60vh;
+    max-height: 60vh;
     flex-direction: column;
-    background: $manatee;
+    background: $astronaut-blue;
     position: relative;
     overflow: visible;
     z-index: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .footer-wrapper::before {
@@ -340,4 +343,67 @@ header.sticky ul li a{
     transform: skewY(-1.5deg);
 }
 
+.footer-social {
+    width: 25%;
+    padding-left: 10%;
+}
+
+.social-icons {
+    list-style: none;
+    font-size: 3.5rem;
+}
+
+.social-icons li a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background:$white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    color: $astronaut-blue;
+}
+
+.footer-logo {
+    width: 25%;
+}
+
+.footer-logo img {
+    width: 350px;
+    height: auto;
+    margin-left: -25%;
+}
+
+.footer-info {
+    width: 25%;
+    padding-right: 10%;
+}
+
+.footer-info p{
+    font-size: 2rem;
+    color: $white;
+    padding-bottom: 0.5rem;
+}
+
+.footer-links {
+    position: relative;
+    width: 25%;
+    margin-left: -12%;
+}
+
+.footer-links ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.footer-links ul li a{
+    color: $white;
+    text-decoration: none;
+}
 //Footer code ends

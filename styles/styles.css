@@ -315,20 +315,26 @@ header.sticky ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
+  min-height: 60vh;
+  max-height: 60vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #8D8E94;
+  background: #28466D;
   position: relative;
   overflow: visible;
   z-index: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
 }
 
 .footer-wrapper::before {
@@ -343,5 +349,75 @@ header.sticky ul li a {
           transform-origin: top left;
   -webkit-transform: skewY(-1.5deg);
           transform: skewY(-1.5deg);
+}
+
+.footer-social {
+  width: 25%;
+  padding-left: 10%;
+}
+
+.social-icons {
+  list-style: none;
+  font-size: 3.5rem;
+}
+
+.social-icons li a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.fa-instagram {
+  color: #28466D;
+}
+
+.footer-logo {
+  width: 25%;
+}
+
+.footer-logo img {
+  width: 350px;
+  height: auto;
+  margin-left: -25%;
+}
+
+.footer-info {
+  width: 25%;
+  padding-right: 10%;
+}
+
+.footer-info p {
+  font-size: 2rem;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.footer-links {
+  position: relative;
+  width: 25%;
+  margin-left: -12%;
+}
+
+.footer-links ul li {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
