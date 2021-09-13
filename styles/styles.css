@@ -49,7 +49,7 @@ header .logo {
   color: #fff;
 }
 
-header ul {
+header .desktop-nav ul {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,12 +62,12 @@ header ul {
           align-items: center;
 }
 
-header ul li {
+header .desktop-nav ul li {
   position: relative;
   list-style: none;
 }
 
-header ul li a {
+header .desktop-nav ul li a {
   position: relative;
   margin: 0 15px;
   text-decoration: none;
